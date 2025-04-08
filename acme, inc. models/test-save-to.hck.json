@@ -1,72 +1,85 @@
 {
-  "modelName": "New Model",
+  "modelName": "New model",
   "collections": [
     {
-      "collectionName": "New Collection",
+      "collectionName": "New_table",
       "type": "object",
       "properties": [
         {
-          "name": "New Field",
+          "name": "New_column",
           "hackoladeMeta": {
             "namingConvention": "code"
           },
           "isActivated": true,
+          "primaryKey": false,
+          "mode": "string",
+          "required": false,
+          "childType": "text",
           "type": "string",
-          "color": "#555555",
-          "GUID": "9428765b-7c65-4864-8262-454709c0231b",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "2efbc6c2-032e-4f69-82ca-941c2e467c38",
           "error": {
             "name": false,
             "code": false
           },
-          "code": "NewField"
+          "code": "nw_clmn"
         },
         {
-          "name": "New Field1",
+          "name": "New_column1",
           "hackoladeMeta": {
             "namingConvention": "code"
           },
           "isActivated": true,
+          "primaryKey": false,
+          "mode": "string",
+          "required": false,
+          "childType": "text",
           "type": "string",
-          "color": "#555555",
-          "GUID": "4c6dd53c-e41c-49b8-bbcb-41167e5899bb",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "915be59e-6682-4a7b-b560-88d60d1e8704",
           "error": {
             "name": false,
             "code": false
           },
-          "code": "NewField1"
+          "code": "nw_clmn1"
         }
       ],
       "definitions": {
         "type": "definitions",
         "properties": [],
-        "GUID": "f8a523c2-67be-4ef8-b8e7-f4b2bed1d5c7"
+        "GUID": "e801f3b5-7c42-467d-b544-49113c90124f"
       },
       "isActivated": true,
       "additionalProperties": false,
-      "validationLevel": "Off",
-      "validationAction": "Warn",
-      "storageEngineName": "WiredTiger",
       "collectionUsers": [],
-      "indexes": [],
-      "collation": {},
-      "sharding": {
-        "unique": true,
-        "collation": "null"
-      },
-      "GUID": "b613e419-138c-439a-b113-4a5af9377a78",
-      "bucketId": "fc87f322-2c7e-4689-aa63-e5076617fddf",
+      "GUID": "2faa90a8-d33a-4e95-9e55-b307c70fa49d",
+      "bucketId": "3760df05-6efa-4bc9-a2ac-046dab4cfef4",
       "hackoladeMeta": {
         "namingConvention": "code"
       },
-      "code": "NewCollection"
+      "code": "nw_tbl"
     }
   ],
   "buckets": [
     {
-      "name": "SaveTotest",
+      "name": "New_database",
       "type": "bucket",
       "collectionIds": [
-        "b613e419-138c-439a-b113-4a5af9377a78"
+        "2faa90a8-d33a-4e95-9e55-b307c70fa49d"
       ],
       "backgroundColor": {
         "r": 216,
@@ -76,11 +89,12 @@
       },
       "show": true,
       "isActivated": true,
-      "GUID": "fc87f322-2c7e-4689-aa63-e5076617fddf",
+      "indexes": [],
+      "GUID": "3760df05-6efa-4bc9-a2ac-046dab4cfef4",
       "hackoladeMeta": {
         "namingConvention": "code"
       },
-      "code": "SaveTotest"
+      "code": "nw_dtbs"
     }
   ],
   "views": [],
@@ -88,58 +102,59 @@
   "users": [],
   "diagramViews": [],
   "idToNameHashTable": {
-    "fc87f322-2c7e-4689-aa63-e5076617fddf": "SaveTotest",
-    "b613e419-138c-439a-b113-4a5af9377a78": "New Collection",
-    "9428765b-7c65-4864-8262-454709c0231b": "New Field",
-    "4c6dd53c-e41c-49b8-bbcb-41167e5899bb": "New Field1"
+    "3760df05-6efa-4bc9-a2ac-046dab4cfef4": "New_database",
+    "2faa90a8-d33a-4e95-9e55-b307c70fa49d": "New_table",
+    "2efbc6c2-032e-4f69-82ca-941c2e467c38": "New_column",
+    "915be59e-6682-4a7b-b560-88d60d1e8704": "New_column1"
   },
   "definitions": {
     "type": "definitions",
     "properties": [],
-    "GUID": "42bac883-8fbd-42fc-bec9-a2c25de511f5"
+    "GUID": "865044a7-dae5-4bf6-b369-e1b7e499faa5"
   },
   "polyglotDefinitions": {
     "type": "polyglotDefinitions",
     "properties": [],
-    "GUID": "b8dabc56-38e8-4eb9-ab6b-a8c419d9ed37"
+    "GUID": "50b1c4d0-0fc4-4b89-9f36-bfcfd8e62619"
   },
   "externalDefinitions": {
     "type": "externalDefinitions",
     "properties": [],
-    "GUID": "b6593243-c686-4aca-92ec-61bcd7bd8b57"
+    "GUID": "eb1565c2-c338-479e-ad18-9c57452c658b"
   },
   "sources": [],
   "decorativeSymbols": [],
-  "dbVersion": "v7.x",
-  "dbVendor": "MongoDB",
-  "appTarget": "MONGODB",
-  "creationTS": "2025-04-08T08:24:04.172Z",
-  "GUID": "5e01630b-bb11-44b5-ae31-e9a9ed489c1f",
+  "dbVersion": "3.x",
+  "dbVendor": "Hive",
+  "appTarget": "HIVE",
+  "creationTS": "2025-04-08T10:46:05.061Z",
+  "GUID": "a7cafdf9-d2f4-4ec0-afc0-a1b490625313",
   "hackoladeMeta": {
     "namingConvention": "code",
-    "validationErrors": {},
-    "customPropertiesUpdated": true
+    "validationErrors": {}
   },
   "isLineageEnabled": false,
-  "code": "NewModel",
-  "lastModifTS": "2025-04-08T08:28:07.176Z",
+  "code": "nw-mdl",
+  "lastModifTS": "2025-04-08T10:47:09.854Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
+    "pluginName": "Hive",
+    "pluginVersion": "0.2.13",
     "pluginEngineVersion": "1.0.0"
   },
   "applicationInformation": {
-    "version": "8.1.1"
+    "version": "8.1.2"
   },
   "settings": {
     "centralPane": {
       "dbLevel": {
         "erd": [
           {
-            "GUID": "b613e419-138c-439a-b113-4a5af9377a78",
+            "GUID": "2faa90a8-d33a-4e95-9e55-b307c70fa49d",
             "x": 1080,
             "y": 1080,
-            "width": 205,
+            "width": 214,
             "height": 69,
             "color": {}
           }
@@ -154,7 +169,7 @@
           {
             "x": 1040,
             "y": 1040,
-            "GUID": "fc87f322-2c7e-4689-aa63-e5076617fddf"
+            "GUID": "3760df05-6efa-4bc9-a2ac-046dab4cfef4"
           }
         ],
         "collapsedNodes": [],
